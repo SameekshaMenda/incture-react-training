@@ -1,0 +1,23 @@
+footer{
+    background-color: #175fe5;
+}
+
+.container{
+    display:flex;
+    position:fixed;
+    max-height: fit-content;
+    max-width: max-content;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    background-color: bisque;
+}
+.box{
+            background-color:  rgb(42, 93, 165);
+            color: aliceblue;
+            padding: 20px;
+        }
+
+.a{
+    color: aliceblue;
+}        
