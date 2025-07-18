@@ -1,0 +1,50 @@
+.body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff7f7;
+}
+.form{
+   
+    font-family:sans-serif;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(10, 7, 14, 0.993);
+    overflow: hidden;
+    
+}
+.listOftask{
+    background-color: antiquewhite;
+    color: #ffffff;
+}
+button{
+    background-color: rgb(138, 80, 220);
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    border: none;
+    border-radius: 10px;
+    color: antiquewhite;
+}
+
+button:hover{
+    background-color: #ae6acb;
+}
+
+button:active{
+    background-color: #4b277f;
+}
+
+.display{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
