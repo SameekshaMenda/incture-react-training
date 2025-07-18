@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <input id="display" class="display" readonly>
+        <div class="keys">
+                <button onclick="setDisplay('+')" class="operator-btn">+ </button>
+                <button onclick="setDisplay('7')">7</button>
+                <button onclick="setDisplay('8')">8</button>
+                <button onclick="setDisplay('9')">9</button>
+                <button onclick="setDisplay('-')" class="operator-btn">-</button>
+                <button onclick="setDisplay('4')">4</button>
+                <button onclick="setDisplay('5')">5</button>
+                <button onclick="setDisplay('6')">6</button>
+                <button onclick="setDisplay('x')" class="operator-btn">x</button>
+                <button onclick="setDisplay('1')">1</button>
+                <button onclick="setDisplay('2')">2</button>
+                <button onclick="setDisplay('3')">3</button>
+                <button onclick="setDisplay('/')" class="operator-btn">/</button>
+                <button onclick="setDisplay('0')">0</button>
+                <button onclick="setDisplay('.')">.</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="Calculate()" class="operator-btn">=</button>
+        </div>
+    </div>
+    <script src="./calci.js"></script>
+</body>
+</html>
