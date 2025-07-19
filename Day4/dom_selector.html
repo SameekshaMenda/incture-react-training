@@ -6,28 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> welcome to DOM manipulation:</h1>
-    <br>
-    <a id="url" href="https://www.google.com">Click me</a>
-    <br>
-    <button onclick="handleClick()">Get</button>
-    <button onclick="setAtt()">Set</button>
+    <h1 class="head1">first heading</h1>
+    <h2 class="head2">second heading</h3>
+    <h3 class="head1">third heading</h4>
 
+        <p id="p1">1st para</p>
+        <p id="p2">2nd para</p>
+        <script>
+            // let p_obj = document.getElementById("p2");  //1st selecter 
+            // console.log(p_obj)
+            // p_obj.style.color="red";
 
-    <script>
+            // let head_obj = document.getElementsByClassName("head1");  //2nd selector
+            // console.log(head_obj);
+            // head_obj[0].style.color="red";
 
-        function handleClick(){
-                let obj = document.getElementById("url");
-                let value = obj.getAttribute("href");
-                console.log(value);
-        }
+            // let obj = document.getElementsByTagName("p");   
+            // console.log(obj);
+            // obj[1].style.color="Blue";
 
-        function setAtt(){
+            // let obj = document.querySelector(".head1");
+            // let objj = document.querySelector("#p1");
+            // let obj = document.querySelector("p");
+            // console.log(obj);
 
-            let obj = document.getElementById("url");
-            obj.setAttribute("href","https://www.facebook.com"); //we are changing content of the element it dynamicallly
-           
-        }
-    </script>
+            // let obj = document.querySelectorAll("p");
+            // console.log(obj);
+
+        </script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="To-Do.css">
+</head>
+
+<body>
+    <div class="form">
+        <h2 style="color: antiquewhite; text-align: center;"> Welcome To Your To Do List</h2>
+        <input type="text" id="input" placeholder="Enter Your Task Here" class="display">
+
+        <div class="btn-container">
+            <button onclick="createTask()">Add</button>
+            <button class="deleteAll" onclick="deleteAllTask()">Delete All</button>
+        </div>
+
+
+        <h4>Your To Do List:</h4>
+        <ol id="list" class="listOfTask">
+            <!-- tasks shown here -->
+        </ol>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

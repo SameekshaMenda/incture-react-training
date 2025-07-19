@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> welcome to DOM manipulation:</h1>
+    <br>
+    <a id="url" href="https://www.google.com">Click me</a>
+    <br>
+    <button onclick="handleClick()">Get</button>
+    <button onclick="setAtt()">Set</button>
+
+
+    <script>
+
+        function handleClick(){
+                let obj = document.getElementById("url");
+                let value = obj.getAttribute("href");
+                console.log(value);
+        }
+
+        function setAtt(){
+
+            let obj = document.getElementById("url");
+            obj.setAttribute("href","https://www.facebook.com"); //we are changing content of the element it dynamicallly
+           
+        }
+    </script>
+</body>
+</html>
