@@ -5,7 +5,7 @@
 //functional component
 
 
-import Card from "./Card"
+import Card from "./Day7/Card"
 
 // function App() {
   
@@ -84,14 +84,13 @@ import Card from "./Card"
 // export default App
 
 //-------------------------------------Assignment--------------------------------
-// import { useState } from "react";
-import Counters from "./Assignment/Counters"
+import Counters from "./Day7/Assignment/Counters"
 function App() {
-  // const [show, setShow] = useState(true);
+  const inputVal = 10;
   return (
     <>
      <div>
-       <Counters/>
+       <Counters input={inputVal}/>
      </div>
     </>
   )
