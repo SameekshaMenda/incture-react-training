@@ -26,7 +26,7 @@ import Card from "./Day7/Card"
 
 // export default App
 
-//---------------------------------------------------------------
+//---------------------------------------------Day7------------------------------------------
 // function App() {
   
 //    function handleClick() {
@@ -83,14 +83,29 @@ import Card from "./Day7/Card"
 
 // export default App
 
-//-------------------------------------Assignment--------------------------------
-import Counters from "./Day7/Assignment/Counters"
+//-------------------------------------Assignment to do counter app--------------------------------
+// import Counters from "./Day7/Assignment/Counters"
+// function App() {
+//   const inputVal = 10;
+//   return (
+//     <>
+//      <div>
+//        <Counters input={inputVal}/>
+//      </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+//------------------------------------Day8-------------------------------------------
+import Firstevent from "./Day8/Firstevent";
 function App() {
-  const inputVal = 10;
+  
   return (
     <>
      <div>
-       <Counters input={inputVal}/>
+       <Firstevent/>
      </div>
     </>
   )
