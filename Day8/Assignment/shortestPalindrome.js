@@ -1,37 +1,35 @@
-function shortestPalindrome(s) {
-    let reversedString = s.split('').reverse().join('');
-    console.log(reversedString);
-    if (reversedString === s) {
-        console.log("palindrome");
-    }
-    else {
-        // for (let i = 1; i < s.length; i++) {
-        //     reversedString += s[i];
-        // }
-        // console.log(reversedString);
+function isPalindrome(s,end)
+ {
+    let left = 0;
+    let right = end;
 
-        let charSet = new Set();
-        let left = 0;
-        let max_length = 0;
-
-
-        for (let right = 0; right < s.length; right++) {
-            while (charSet.has(s[right])) {
-                charSet.delete(s[left]);
-                left++;
-            }
-            charSet.add(s[right]);
-            max_length = Math.max(max_length, right - left + 1);
+    while(left < right)
+    {
+        if(s[left] !== s[right])
+        {
+            return false;
         }
-        console.log(s);
-        console.log(charSet);
+        left ++;
+        right --;
+    }
+    return true;
 
-       
+ }
+const shortestPalindrome = (s) => {
+    let n = s.length;
+    let end = n-1;
+    while(end >= 0)
+    {
+
+    if(isPalindrome(s,end))
+       break;
+    end --;
 
     }
 
+    let suffix = s.slice(end + 1);
+    let reversed = suffix.split('').reverse().join('');
+    return reversed + s;
+};
 
-
-}
-
-shortestPalindrome("defe");
+console.log(shortestPalindrome("edef"));
