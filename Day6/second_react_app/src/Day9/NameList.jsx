@@ -187,7 +187,7 @@ import { useState } from 'react';
 function NameList() {
 
     const [nameList, setNames] = useState([
-
+        
     ])
 
     const handleDeleteNames = (id) => {
