@@ -22,7 +22,7 @@ function NameList() {
     }
     
     const handleAddUser = () => {
-        if(newName === '' || newAge === '') return False;
+        if(newName === '' || newAge === '') return ;
 
         const lastUserId = nameList.length > 0 ? nameList[nameList.length - 1].id : 0;
         const newUser = {
