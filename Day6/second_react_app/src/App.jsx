@@ -271,22 +271,35 @@ import ChildComponent from "./Day10/assignment/childComponent"
 
 class App extends Component {
   
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
-      appState: true
+      showChild : true,
+      appState : 0
     };
   }
 
   toggleChildComponent = () => {
-    this.setState({appState: !this.state.appState});
+    this.setState({showChild: !this.state.showChild});
   };
+
+  componentDidMount(){
+    this.interval = setInterval(() => {
+           this.setState({appState : this.state.appState + 1});
+           console.log("App State Updated:", this.state.appState + 1);
+    },5000)
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.interval);
+  }
 
   render(){
     return(
       <div>
+        <h1>React Lifecycle Demo</h1>
         <button onClick={this.toggleChildComponent}> Toggle Child Component</button>
-        {this.state.appState && <ChildComponent/>}
+        {this.state.showChild && <ChildComponent/>}
       </div>
     )
   }

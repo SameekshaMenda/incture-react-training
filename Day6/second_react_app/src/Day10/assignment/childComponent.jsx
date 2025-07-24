@@ -5,21 +5,17 @@ class ChildComponent extends Component{
         super(props);
         console.log("ChildComponent : Constructor")
         this.state = {
-            count: 0,
-            seconds: 0
+            count: 0
         };
     }
 
     componentDidMount(){
         console.log("ChildComponent : Component Did Mount");
-        this.interval = setInterval(() => {
-            this.setState({seconds: this.state.seconds + 1});
-        }, 5000);
     }
 
     shouldComponentUpdate(nextProps, nextState){
-         console.log("ChildComponent : Component Did Mount");
-         if (this.state.value !== this.count)
+         console.log("ChildComponent : Should Component Update");
+         if (this.state.count !== nextState.count)
             return true;
         return false;
          
