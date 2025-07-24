@@ -1,186 +1,4 @@
-//------------------------------Task 1------------------------------
-// import { useState } from "react"
-// function NameList(){
 
-//     const [nameList , setNames] = useState([
-//         {id: 100, name: "Sameesksha"},  
-//         {id: 200, name: "Shriraksha "},
-//         {id: 300, name: "Ravi"},
-//     ])
-
-//     const handleDeleteNames = (id) =>
-//     {
-//         const newName = nameList.filter((n)=> n.id != id)
-//         setNames(newName)
-//     }
-//     return(
-//         <ul>
-//             <h2>Name List :</h2>
-//             {
-
-//                 nameList.map((n) => (
-//                     <li>
-//                     <div key={n.id}>{n.name}
-//                     <button onClick={() => {handleDeleteNames(n.id)}}> Delete</button>
-//                     </div>
-//                     </li>
-//                 ))
-
-//             }
-//         </ul>
-//     )
-// }
-// export default NameList;
-
-//----------------------------------------Task 2-------------------------
-// import Table from 'react-bootstrap/Table';
-// import Button from 'react-bootstrap/Button';
-// function NameList() {
-
-//     const nameList = [
-//         { id: 100, name: "Sameesksha", age: 20 },
-//         { id: 200, name: "Shriraksha ", age: 20 },
-//         { id: 300, name: "Ravi", age: 21 }
-//     ]
-
-
-//     return (
-//         <div className='container mt-4'>
-//             <h2>Name List :</h2>
-
-
-//             <Table striped bordered hover>
-//                 <thead>
-//                     <tr>
-//                         <th> Id </th>
-//                         <th> Name </th>
-//                         <th> Age </th>
-//                     </tr>
-//                 </thead>
-//                 <tbody>
-//                     {
-//                         nameList.map((name) => (
-//                             <tr key={name.id}>
-//                                 <td>{name.id}</td>
-//                                 <td>{name.name}</td>
-//                                 <td>{name.age}</td>
-//                             </tr>
-//                         ))
-//                     }
-//                 </tbody>
-//             </Table>
-
-
-//         </div>
-//     )
-// }
-// export default NameList;
-
-//------------------------------------Task 3------------------------------------
-// import Table from 'react-bootstrap/Table';
-// import Button from 'react-bootstrap/Button';
-// import { useState } from 'react';
-// function NameList() {
-
-//     const [nameList , setNames] = useState([
-//         {id: 100, name: "Sameeksha"},  
-//         {id: 200, name: "Shriraksha "},
-//         {id: 300, name: "Ravi"},
-//     ])
-
-//     const handleDeleteNames = (id) =>
-//     {
-//         const newName = nameList.filter((n)=> n.id != id)
-//         setNames(newName)
-//     }
-
-
-//     return (
-//         <div className='container mt-4'>
-//             <h2>Name List :</h2>
-
-
-//             <Table striped bordered hover>
-//                 <thead>
-//                     <tr>
-//                         <th> Id </th>
-//                         <th> Name </th>
-//                         <th> Age </th>
-//                         <th>Action </th>
-//                     </tr>
-//                 </thead>
-//                 <tbody>
-//                     {
-//                         nameList.map((name) => (
-//                             <tr key={name.id}>
-//                                 <td>{name.id}</td>
-//                                 <td>{name.name}</td>
-//                                 <td>{name.age}</td>
-//                                <Button variant="danger" size='em'onClick={() => {handleDeleteNames(name.id)}}> Delete</Button>
-//                             </tr>
-//                         ))
-//                     }
-//                 </tbody>
-//             </Table>
-
-
-//         </div>
-//     )
-// }
-// export default NameList;
-
-//-----------------------------------------Task 4 -------------------------------------------------------
-// import Table from 'react-bootstrap/Table';
-// import Button from 'react-bootstrap/Button';
-// import { useState } from 'react';
-// function NameList() {
-
-//     const [nameList , setNames] = useState([
-//         {id: 100, name: "Sameeksha"},  
-//         {id: 200, name: "Shriraksha "},
-//         {id: 300, name: "Ravi"},
-//     ])
-
-
-
-//     const handleAddNames = (name) =>
-//     {
-//         const addName = nameList.push(name)
-//         setNames(addName);
-//     }
-
-//     return (
-//         <div className='container mt-4'>
-//             <h2>Name List :</h2>
-//             <input type='text' placeholder='Enter the name'/>
-//             <Button variant="primary" size='em' onClick={()=> {handleAddNames(name)}}> Add</Button>
-//             <Table striped bordered hover>
-//                 <thead>
-//                     <tr>
-//                         <th> Id </th>
-//                         <th> Name </th>
-//                         <th>Action </th>
-//                     </tr>
-//                 </thead>
-//                 <tbody>
-//                     {
-//                         nameList.map((name) => (
-//                             <tr key={name.id}>
-//                                 <td>{name.id}</td>
-//                                 <td>{name.name}</td>
-//                             </tr>
-//                         ))
-//                     }
-//                 </tbody>
-//             </Table>
-
-
-//         </div>
-//     )
-// }
-// export default NameList;
-
-//--------------------------------------------------task 5---------------------------------
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
@@ -188,27 +6,47 @@ function NameList() {
 
     const [nameList, setNames] = useState([
 
-    ])
+        { id: 1, name: "Ajay", age: 25 },
+        { id: 2, name: "Sachin ", age: 30 },
+        { id: 3, name: "Ravi", age: 23 }
+    
 
-    const handleDeleteNames = (id) => {
-        const newName = nameList.filter((n) => n.id != id)
-        setNames(newName)
+    ]);
+
+    const [newName , setNewName] = useState('');
+    const [newAge , setNewAge] = useState('');
+
+    const handleDeleteUser = (id) => {
+        const deleteUser = nameList.filter((user) => user.id != id)
+        setNames(deleteUser);
     }
+    
+    const handleAddUser = () => {
+        if(newName === '' || newAge === '') return False;
 
-    const handleDisplay = () => {
-
-        if (nameList.length == []) {
-            <div>
-                <h2> no data</h2>
-                console.log("no data"); 
-            </div>
-        }
+        const lastUserId = nameList.length > 0 ? nameList[nameList.length - 1].id : 0;
+        const newUser = {
+            id: lastUserId + 1,
+            name: newName,
+            age: newAge
+        };
+        
+        setNames([...nameList, newUser]);
+        
     }
+    
     return (
         <div className='container mt-4' >
             <h2>Name List :</h2>
 
-
+            <input type='text' placeholder='Enter the name' value={newName} onChange={(event) => setNewName(event.target.value)}/>
+            <input type='number' placeholder='Enter the age' value={newAge} onChange={(event) => setNewAge(event.target.value)}/>
+             <Button variant="primary" onClick={handleAddUser} className='mb-4'>
+                Add User
+            </Button>
+            {
+            nameList.length === 0 ? <p>No users available</p> :
+            (
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -220,19 +58,21 @@ function NameList() {
                 </thead>
                 <tbody>
                     {
-                        nameList.map((name) => (
-                            <tr key={name.id}>
-                                <td>{name.id}</td>
-                                <td>{name.name}</td>
-                                <td>{name.age}</td>
-                                <div>
-                                    <Button variant="danger" size='em' onClick={() => { handleDeleteNames(name.id) }}> Delete</Button>
-                                </div>
+                        nameList.map((user) => (
+                            <tr key={user.id}>
+                                <td>{user.id}</td>
+                                <td>{user.name}</td>
+                                <td>{user.age}</td>
+                                <td>
+                                    <Button variant="danger" size='em' onClick={() => { handleDeleteUser(user.id) }}> Delete</Button>
+                                </td>
                             </tr>
                         ))
                     }
                 </tbody>
             </Table>
+            )
+        }
 
 
         </div>
