@@ -266,47 +266,169 @@ import Card from "./Day7/Card"
 // export default App
 
 //--------------------------------------------------------------------------   
-import React , {Component} from "react"
-import ChildComponent from "./Day10/assignment/childComponent"
+// import React , {Component} from "react"
+// import ChildComponent from "./Day10/assignment/childComponent"
 
-class App extends Component {
+// class App extends Component {
   
-  constructor(props){
-    super(props);
-    this.state = {
-      showChild : true,
-      appState : 0
-    };
-  }
+//   constructor(props){
+//     super(props);
+//     this.state = {
+//       showChild : true,
+//       appState : 0
+//     };
+//   }
 
-  toggleChildComponent = () => {
-    this.setState({showChild: !this.state.showChild});
-  };
+//   toggleChildComponent = () => {
+//     this.setState({showChild: !this.state.showChild});
+//   };
 
-  componentDidMount(){
-    this.interval = setInterval(() => {
-           this.setState({appState : this.state.appState + 1});
-           console.log("App State Updated:", this.state.appState + 1);
-    },5000)
-  }
+//   componentDidMount(){
+//     this.interval = setInterval(() => {
+//            this.setState({appState : this.state.appState + 1});
+//            console.log("App State Updated:", this.state.appState + 1);
+//     },5000)
+//   }
 
-  componentWillUnmount(){
-    clearInterval(this.interval);
-  }
+//   componentWillUnmount(){
+//     clearInterval(this.interval);
+//   }
 
-  render(){
-    return(
-      <div>
-        <h1>React Lifecycle Demo</h1>
-        <button onClick={this.toggleChildComponent}> Toggle Child Component</button>
-        {this.state.showChild && <ChildComponent/>}
-      </div>
-    )
-  }
+//   render(){
+//     return(
+//       <div>
+//         <h1>React Lifecycle Demo</h1>
+//         <button onClick={this.toggleChildComponent}> Toggle Child Component</button>
+//         {this.state.showChild && <ChildComponent/>}
+//       </div>
+//     )
+//   }
 
+// }
+
+
+// export default App
+
+
+//------------------------------day11--------------------------------
+// import HookFirstComp from "./Day11/HookFirstComp"
+// function App() {
+  
+//   return (
+//     <>
+//      <div>
+//        <HookFirstComp/>
+//      </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+//-----------------------------------------------------------
+// import UseEffectComponent from "./Day11/UseEffectComponent"
+// function App() {
+  
+//   return (
+//     <>
+//      <div>
+//        <UseEffectComponent/>
+//      </div>
+//     </>
+//   )
+// }
+
+// export default App
+//-----------------------------------------------------------
+
+// import UseEffectSecond from "./Day11/UseEffectSecond"
+// function App() {
+  
+//   return (
+//     <>
+//      <div>
+//        <UseEffectSecond/>
+//      </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+//---------------------------------------------------
+
+// import UseEffectThird from "./Day11/UseEffectThird"
+// function App() {
+  
+//   return (
+//     <>
+//      <div>
+//        <UseEffectThird/>
+//      </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+//----------------------------------------------------------------
+// import UseMemoFirst from "./Day11/UseMemoFirst"
+// function App() {
+  
+//   return (
+//     <>
+//      <div>
+//        <UseMemoFirst/>
+//      </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+//----------------------------------------------------
+// import UseRefFirst from "./Day11/UseRefFirst"
+// function App() {
+  
+//   return (
+//     <>
+//      <div>
+//        <UseRefFirst/>
+//      </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+//-----------------------------------------------------------------
+// import Parent from "./Day11/Parent"
+// function App() {
+  
+//   return (
+//     <>
+//      <div>
+//        <Parent/>
+//      </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+//-------------------------------------------------------
+import FirstCounter from "./Day11/CustomHook'/FirstCounter"
+import SecondCounter from "./Day11/CustomHook'/SecondCounter"
+function App() {
+  
+  return (
+    <>
+     <div>
+       <FirstCounter/>
+       <SecondCounter/>
+     </div>
+    </>
+  )
 }
 
-
 export default App
-
-
