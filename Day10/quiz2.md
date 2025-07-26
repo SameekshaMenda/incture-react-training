@@ -152,18 +152,17 @@ C. { if(condition) <A /> else <B /> }
 D. { <A /> ? condition : <B /> }
 
 # 17. Which line properly assigns a key when rendering a User component?
+```javascript
 A. <User key={user.id} data={user} />
 
 B. <User data={user} />
 
 C. <User key={index} />
 
-D. <User id={user.id} />
+D. <User id={user.id} /
+```
 
 # 18. What will the following code render?
-jsx
-Copy
-Edit
 {['A', 'B', 'C'].map(item => {item})}
 A. A syntax error
 
