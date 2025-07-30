@@ -41,8 +41,9 @@ const userName = "Sachin";
 function App() {
   return (
    
+    //only these components have access to global storage
       <ThemeProvider>
-        <h2>Toggle Component</h2>
+        <h2>Toggle Component</h2>  
         <ThemeToggleComponent />
       </ThemeProvider>
    

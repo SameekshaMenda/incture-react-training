@@ -8,8 +8,8 @@ function ThemeToggleComponent() {
     backgroundColor : theme === 'light' ? '#fff' : '#333',
     color: theme === 'light' ? '#000' : '#fff',
     padding: '500px',
-    textAllign: 'center',
-    minheight: '100vh',
+    textAlign: 'center',
+    minHeight: '100vh',
   }
 
   return (
