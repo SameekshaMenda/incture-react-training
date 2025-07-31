@@ -9,14 +9,14 @@ function exist(board, word){
         if(row < 0 || col < 0 || row >= rows || col >= cols || board[row][col] !== word[index]) return false;
 
         let temp = board[row][col];
-        board[row][col] = '#'; // mark as visited
+        board[row][col] = '#';
 
         let found = dfs(row + 1, col, index + 1) ||
                     dfs(row - 1, col , index + 1) ||
                     dfs(row, col + 1, index + 1) ||
                     dfs(row , col - 1, index + 1) 
 
-        board[row][col] = temp; // unmark
+        board[row][col] = temp;
         return found;
     }
 
@@ -30,4 +30,4 @@ function exist(board, word){
     }
     return false
 }
-console.log(exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCCED")); // false
+console.log(exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCCED")); 
