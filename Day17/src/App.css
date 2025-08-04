@@ -40,22 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-
-.main-container{
-  background-color: rgb(124, 124, 211);
-  padding: 10px;
-  border-radius: 30px;
-}
-
-.btn:hover{
-  background-color:  #e28c8c;
-}
-
-.btn:active{
-  background-color: #e36868;
-}
-
-.btn{
-  background-color: #e36868;
-  color: aliceblue;
-}
