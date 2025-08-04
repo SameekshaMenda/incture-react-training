@@ -24,7 +24,7 @@ function Task() {
         }
         
         else if (! /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-            errorList.email = "Email is invalid...";
+            errorList.email  = "Email is invalid...";
         }
 
 
