@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { useFormData } from './context/FormContext';
+import { useFormData } from '../context/FormContext';
 
 
 function PersonalData({ nextStep }) {
@@ -20,8 +20,8 @@ function PersonalData({ nextStep }) {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <div className='main-container'>
+      <form className='form-container' onSubmit={handleSubmit(onSubmit)}>
 
         <h3>1. Personal Details</h3>
 
