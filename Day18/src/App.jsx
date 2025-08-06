@@ -35,8 +35,27 @@
 // export default App
 
 //-------------------------------------cart task----------------------------
-import ProductList from './Cart/component/ProductList'
-import Cart from './Cart copy/component/Cart'
+// import ProductList from './Cart/component/ProductList'
+// import Cart from './Cart copy/component/Cart'
+// import './App.css'
+
+// function App() {
+  
+
+//   return (
+//    <div>
+//          <h1>Redux : State Management</h1>
+//          <ProductList/>
+//          <Cart/>
+         
+//    </div>
+//   )
+// }
+
+// export default App
+//--------------------------------------------------------------------
+
+import Fetch from './MiddlewareConcept/components/Fetch'
 import './App.css'
 
 function App() {
@@ -45,8 +64,7 @@ function App() {
   return (
    <div>
          <h1>Redux : State Management</h1>
-         <ProductList/>
-         <Cart/>
+         <Fetch/>
          
    </div>
   )

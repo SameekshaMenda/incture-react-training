@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import {Provider} from 'react-redux'
 // import store from './redux/store.js'
 // import { store } from './Cart/redux/store.js'
-import store from './Cart copy/redux/store.js'
+import { store } from './MiddlewareConcept/middleware/store.js'
 import './index.css'
 import App from './App.jsx'
 
