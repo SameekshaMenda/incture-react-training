@@ -8,6 +8,21 @@ function Data() {
 
     const course : string[] = ['React', 'Vue'];
 
+   
+    type Employee = {
+        id : number;
+        name: string;
+        city: string;
+    }
+
+     const emp1: Employee = {
+        id : 100,
+        // name: 889,
+         name: "ABC",
+        city: "Managaluru"
+    }
+
+
   return (
     <div>
       <h2>User Profile :</h2>
@@ -20,6 +35,10 @@ function Data() {
               {c}
             </li>
         ))}</ul>  
+
+        <p> Employee Id : {emp1.id}</p>
+        <p> Employee name : {emp1.name}</p>
+        <p> Employee city : {emp1.city}</p>
     </div>
   )
 }
